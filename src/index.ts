@@ -109,3 +109,22 @@ console.log(checkType()); // Hello
 console.log("==== Functions Section====");
 
 ////////////////////////////// ==== Functions Section ==== //////////////////////////////
+
+////////////////////////////// ==== Interfaces Section ==== //////////////////////////////
+console.log("==== Interfaces Section====");
+
+interface Person {
+  name: string;
+  age: number;
+}
+
+let user: Person;
+user = {
+  name: "Majed",
+  age: 23,
+};
+
+console.log(user); // { name: 'Majed', age: 23 }
+
+console.log("==== Interfaces Section====");
+////////////////////////////// ==== Interfaces Section ==== //////////////////////////////
