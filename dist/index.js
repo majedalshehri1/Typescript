@@ -91,3 +91,19 @@ user = {
 console.log(user); // { name: 'Majed', age: 23 }
 console.log("==== Interfaces Section====");
 ////////////////////////////// ==== Interfaces Section ==== //////////////////////////////
+////////////////////////////// ==== Type alias Section ==== //////////////////////////////
+console.log("==== Type alias Section====");
+// Method 1: type MyType = string | number;
+// Method 2: type MyType ={
+//   name: string;
+//   age: number;
+//}
+// Method 1: let s: MyType = 10; // :MyType () => string | number
+// Method 1: let i: MyType = "Hello"; // :MyType () => string | number
+// Method 2: let i: MyType = {
+//   name: "Majed",
+//   age: 23,
+// }; // :MyType () => { name: string; age: number; }
+// console.log(i.name); // Majed
+console.log("==== Type alias Section====");
+////////////////////////////// ==== Type alias Section ==== //////////////////////////////
