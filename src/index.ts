@@ -4,6 +4,7 @@ const greet = (name: string): void => {
 
 greet("Majed");
 
+////////////////////////////// ==== Types Section ==== //////////////////////////////
 console.log("==== Type Section====");
 
 // string, number, boolean, undefined, null:
@@ -57,6 +58,54 @@ y.push(20); //Error: Argument of type '5' is not assignable, Because the tuple i
 
 let x: (string | number)[] = ["Hello", 5]; // : (string | number)[]
 x.push(10); // : (string | number)[]
-console.log(typeof x, x);
+console.log(typeof x, x); // object [ 'Hello', 5, 10 ]
 
 console.log("==== Type Section====");
+////////////////////////////// ==== Types Section ==== //////////////////////////////
+
+////////////////////////////// ==== Functions Section ==== //////////////////////////////
+
+console.log("==== Functions Section====");
+
+const w = () => {
+  // if the function return number like the fun w, let to check the hover in the w func to check the type of the function
+  return 10;
+};
+
+// ==== arrow function with type annotation: ==== //
+//Example 1:
+const checkType: () => string = () => {
+  return "Hello";
+};
+/*
+In the arrow function, we can define the type of the function in three steps:
+- The frist step to defind the variable > const checkType
+- The second step to define the type of the function > : () => string
+- The third step to define the function > = () => { return "Hello"; }
+*/
+
+//Example 2:
+const typeWithParameter: (x: number, y: number) => number = (x, y) => {
+  return x + y;
+};
+
+/*
+Part 1: const typeWithParameter: (x: number, y: number)
+Part 2: => => number = (x, y) =>{return number type;}
+
+- (x: number, y: number) this is type of params
+- => number this is type of return, that means the function return ( number )
+*/
+
+//Example 3:
+const z = (x: string, y: number) => {
+  return ["hello", true];
+};
+
+// ==== arrow function with type annotation: ==== //
+
+console.log(checkType()); // Hello
+
+console.log("==== Functions Section====");
+
+////////////////////////////// ==== Functions Section ==== //////////////////////////////
