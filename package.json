@@ -4,7 +4,8 @@
   "description": "Welcome to the ultimate guide for setting up TypeScript in your project the **right way**.   This guide will help you install TypeScript either **locally** (project-only) or **globally** (system-wide), and set up your project to start coding cleanly and professionally.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
